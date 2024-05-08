@@ -1,0 +1,1 @@
+N.B. Ho specificato solo il type e qualche UNIQUE ma non sono presenti i NULL e NOT NULL o DEFAULT per una questione di spazi delle tabelle. 
