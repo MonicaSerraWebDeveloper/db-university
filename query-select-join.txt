@@ -61,6 +61,6 @@ FROM `students`
 JOIN `exam_student` ON `exam_student`.`student_id` = `students`.`id`
 JOIN `exams` ON `exam_student`.`exam_id` = `exams`.`id`
 JOIN `courses` ON `exams`.`course_id` = `courses`.`id`
-WHERE `exam_student`.`vote` >= 18
 GROUP BY `exams`.`course_id`, `student_name`, `student_surname`, `student_id`
+HAVING `maximum_vote` >= 18
 ORDER BY `student_id`;
